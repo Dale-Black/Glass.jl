@@ -1,6 +1,11 @@
 using Glass
+using HypertextLiteral
 using Test
 
-@testset "Glass.jl" begin
-    # Write your tests here.
+@testset "HTML Elements" begin
+    @testset "p" begin
+        p1 = @p("this is some text")
+        p2 = htl"""<p>this is some text</p>"""
+        @test p1 == p2
+    end
 end
