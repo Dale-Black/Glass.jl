@@ -1,25 +1,25 @@
 
 macro button(text)
-    htl"""
+    return @htl """
     	<button>$(eval(text))</button>
     """
 end
 
 macro div(macros...)
-    return htl"""
+    return @htl """
     	<div>$(eval.(macros))</div>
     """
 end;
 
 macro h1(text)
-    return htl"""
+    return @htl """
     	<h1>$(eval(text))</h1>
     """
 end
 
 macro p(text)
-    return htl"""
-    	<p>$(eval(text))</p> 
+    return @htl """
+    	<p>$(text)</p> 
     """
 end
 
