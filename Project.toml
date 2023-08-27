@@ -1,13 +1,7 @@
 name = "Glass"
-uuid = "f378e0a8-b44e-4406-8441-6e2dc36d9674"
-authors = ["Dale-Black <djblack@uci.edu> and contributors"]
+uuid = "bb4546cf-ec2a-4cce-80e7-b1aa7c68a867"
+authors = ["Dale Black <djblack@uci.edu>"]
 version = "0.1.0"
-
-[deps]
-HypertextLiteral = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
-
-[compat]
-julia = "1.8"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
