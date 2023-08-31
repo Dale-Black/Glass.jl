@@ -1,0 +1,10 @@
+name = "TodoApp"
+uuid = "f06f49fb-ba7a-46ca-89fc-4383cf8e4bde"
+authors = ["Dale Black <djblack@uci.edu>"]
+version = "0.1.0"
+
+[deps]
+Glass = "bb4546cf-ec2a-4cce-80e7-b1aa7c68a867"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Oxygen = "df9a0d86-3283-4920-82dc-4555fc0d1d8b"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
