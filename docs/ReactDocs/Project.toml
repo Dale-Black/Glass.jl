@@ -1,0 +1,10 @@
+name = "ReactDocs"
+uuid = "c8c54baf-c5a5-4f27-8026-970c95df7ddf"
+authors = ["Dale Black <djblack@uci.edu>"]
+version = "0.1.0"
+
+[deps]
+Glass = "bb4546cf-ec2a-4cce-80e7-b1aa7c68a867"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Oxygen = "df9a0d86-3283-4920-82dc-4555fc0d1d8b"
+Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
