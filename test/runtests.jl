@@ -43,7 +43,7 @@ using Test
     end
 end
 
-@testset "File-Based Routing Functions" begin
+@testset "File-Based Routing" begin
 
     @testset "list_julia_files" begin
         # Simulate a directory with .jl files

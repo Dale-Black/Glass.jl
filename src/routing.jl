@@ -1,4 +1,4 @@
-using HTTP
+using HTTP, Oxygen
 
 """
     _list_julia_files(folder_path, root_path, relative_paths)
