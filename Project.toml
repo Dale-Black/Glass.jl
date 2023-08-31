@@ -3,6 +3,9 @@ uuid = "bb4546cf-ec2a-4cce-80e7-b1aa7c68a867"
 authors = ["Dale Black <djblack@uci.edu>"]
 version = "0.1.0"
 
+[deps]
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 

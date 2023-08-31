@@ -42,3 +42,38 @@ using Test
         test_nested_tags()
     end
 end
+
+@testset "File-Based Routing Functions" begin
+
+    @testset "list_julia_files" begin
+        # Simulate a directory with .jl files
+        root_path = mktempdir()
+        folder_path = joinpath(root_path, "fake_folder")
+        mkpath(folder_path)
+        touch(joinpath(folder_path, "file1.jl"))
+        touch(joinpath(folder_path, "file2.jl"))
+        relative_paths = []
+        
+        Glass._list_julia_files(folder_path, root_path, relative_paths)
+        
+        # For demonstration, let's assume that it found these .jl files
+        expected_paths = ["/fake_folder/file1.jl", "/fake_folder/file2.jl"]
+        
+        @test expected_paths == relative_paths
+    end
+
+    @testset "path_to_routes" begin
+        paths = ["file1.jl", "file2.jl"]
+        expected_routes = ["file1", "file2"]
+        
+        @test expected_routes == Glass.path_to_routes(paths)
+    end
+
+    @testset "route_to_function" begin
+        route = "file1"
+        expected_function = "File1"
+        
+        @test expected_function == Glass.route_to_function(route)
+    end
+
+end
